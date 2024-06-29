@@ -104,6 +104,7 @@ tar -xf tcpdump-4.99.4.tar.xz
 # Enter the source tree
 cd tcpdump-4.99.4
 # do the steps
+./configure
 make
 sudo make install
 # back out of the source tree
