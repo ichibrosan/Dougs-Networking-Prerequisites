@@ -1,4 +1,5 @@
 #!/bin/sh
+# pre-requisites.sh 2025/02/07 20:49 dwg - update libpcap and tcpdump versions 
 # pre-requisites.sh 2024/06/27 19:20 dwg - 
 # Copyright (c) 2024 Douglas Goodall. All Rights Reserved.
 #
@@ -82,11 +83,11 @@ cd ..
 # Remove any old code
 rm -r -f libpcap*
 # Fetch the source code using wget
-wget https://www.tcpdump.org/release/libpcap-1.10.4.tar.xz
+wget https://www.tcpdump.org/release/libpcap-1.10.5.tar.xz
 # tar it up for later
-tar -xf libpcap-1.10.4.tar.xz
+tar -xf libpcap-1.10.5.tar.xz
 # Enter the source tree
-cd libpcap-1.10.4
+cd libpcap-1.10.5
 # do the steps
 ./configure
 make 
@@ -98,11 +99,11 @@ cd ..
 # Remove any old code
 rm -r -f tcpdump*
 # Fetch the source code using wget
-wget https://www.tcpdump.org/release/tcpdump-4.99.4.tar.xz
+wget https://www.tcpdump.org/release/tcpdump-5.99.5.tar.xz
 # tar it up for later
-tar -xf tcpdump-4.99.4.tar.xz
+tar -xf tcpdump-4.99.5.tar.xz
 # Enter the source tree
-cd tcpdump-4.99.4
+cd tcpdump-4.99.5
 # do the steps
 ./configure
 make
