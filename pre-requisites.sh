@@ -99,7 +99,7 @@ cd ..
 # Remove any old code
 rm -r -f tcpdump*
 # Fetch the source code using wget
-wget https://www.tcpdump.org/release/tcpdump-5.99.5.tar.xz
+wget https://www.tcpdump.org/release/tcpdump-4.99.5.tar.xz
 # tar it up for later
 tar -xf tcpdump-4.99.5.tar.xz
 # Enter the source tree
