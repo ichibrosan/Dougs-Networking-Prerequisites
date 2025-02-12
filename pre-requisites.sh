@@ -25,6 +25,9 @@ sudo apt install cmake
 # curl also needs ssl stuff
 sudo apt install -y libssl-dev
 
+# curl needs libpsl
+sudo apt install libpsl-dev
+
 # one time auth step to allow github client to function
 gh auth login
 
